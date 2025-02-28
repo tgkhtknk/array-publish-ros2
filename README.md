@@ -51,9 +51,11 @@ This is a GUI tool for publishing various MultiArray message types in ROS 2. It 
 
 3. Clone the repository:
    ```
-   cd /your/ws/directory
+   cd /your_ws_directory/src
    
-   git clone github.com/tgkhtknk/array-publish-ros2
+   git clone https://github.com/tgkhtknk/array-publish-ros2
+
+   cd /your_ws_directry
    
    colcon build --packages-select array_publisher
 
