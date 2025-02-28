@@ -4,9 +4,9 @@ This is a GUI tool for publishing various MultiArray message types in ROS 2. It 
 
 ## Features
 
-Supports multiple MultiArray message types:
+・Supports multiple MultiArray message types:
 
-Int8MultiArray, Int16MultiArray, Int32MultiArray, Int64MultiArray
+  - Int8MultiArray, Int16MultiArray, Int32MultiArray, Int64MultiArray
 
 UInt8MultiArray, UInt16MultiArray, UInt32MultiArray, UInt64MultiArray
 
