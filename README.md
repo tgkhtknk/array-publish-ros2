@@ -38,44 +38,45 @@ This is a GUI tool for publishing various MultiArray message types in ROS 2. It 
 
 ## Installation
 
-Install ROS 2 and set up your environment:
+1. Install ROS 2 and set up your environment:
 
-source /opt/ros/humble/setup.bash
+  source /opt/ros/your_ros2_distro/setup.bash
 
-Install necessary Python dependencies:
+2. Install necessary Python dependencies:
 
-pip install rclpy PyQt5
+  pip install rclpy PyQt5
 
-Clone the repository:
-
-git clone <repository_url>
-cd <repository_name>
+3. Clone the repository:
+  cd /your/ws/directory
+  git clone github.com/tgkhtknk/array-publish-ros2
+  colcon build --packages-select array_publisher
+  source install/setup.bash
 
 ## Usage
 
-Run the script to start the GUI:
+- Run the script to start the GUI:
 
-python multiarray_publisher.py
+  ros2 run array_publisher array_publihser
 
-GUI Overview
+- GUI Overview
 
-Select Message Type - Choose the type of MultiArray message.
+  Select Message Type - Choose the type of MultiArray message.
 
-Enter Topic Name - Specify the ROS 2 topic name.
+  Enter Topic Name - Specify the ROS 2 topic name.
 
-Set Data Size - Define the number of elements in the array.
+  Set Data Size - Define the number of elements in the array.
 
-Click "Add Topic" - Add a new topic to the table.
+  Click "Add Topic" - Add a new topic to the table.
 
-Edit Data - Modify the comma-separated values in the data field.
+  Edit Data - Modify the comma-separated values in the data field.
 
-Publish Messages:
+- Publish Messages:
 
-Click "Publish Selected" to publish a message for a selected topic.
+  Click "Publish Selected" to publish a message for a selected topic.
 
-Click "Publish All" to publish all topics.
+  Click "Publish All" to publish all topics.
 
-Delete Topics - Select a topic and click "Delete Selected Topic" to remove it.
+  Delete Topics - Select a topic and click "Delete Selected Topic" to remove it.
 
 ## License
 
