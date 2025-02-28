@@ -1,4 +1,5 @@
 import sys
+import signal
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int8MultiArray, Int16MultiArray, Int32MultiArray, Int64MultiArray, UInt8MultiArray, UInt16MultiArray, UInt32MultiArray, UInt64MultiArray, Float32MultiArray, Float64MultiArray
@@ -60,12 +61,8 @@ class MultiArrayPublisher(Node):
         self.topic_table.setColumnCount(4)
         self.topic_table.setHorizontalHeaderLabels(["Topic Name", "Message Type", "Data Size", "Data (comma separated)"])
         self.topic_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)  # 列幅を自動調整
+        self.topic_table.setMinimumWidth(750)  # テーブルの横幅を大きくする
         layout.addWidget(self.topic_table)
-
-        # トピック削除ボタン
-        self.delete_topic_button = QPushButton("Delete Selected Topic")
-        self.delete_topic_button.clicked.connect(self.delete_selected_topic)
-        layout.addWidget(self.delete_topic_button)
 
         # Publish 選択ボタン
         self.publish_selected_button = QPushButton("Publish Selected")
@@ -102,17 +99,7 @@ class MultiArrayPublisher(Node):
         self.topic_table.setItem(row, 1, QTableWidgetItem(self.type_selector.currentText()))
         self.topic_table.setItem(row, 2, QTableWidgetItem(str(data_size)))
         self.topic_table.setItem(row, 3, QTableWidgetItem(""))
-        self.topic_table.setItem(row, 3, QTableWidgetItem(", ".join(["0"] * data_size)))
         self.get_logger().info(f"Added topic {topic_name}")
-
-    def delete_selected_topic(self):
-        selected_row = self.topic_table.currentRow()
-        if selected_row >= 0:
-            topic_name = self.topic_table.item(selected_row, 0).text()
-            if topic_name in self.publishers_dict:
-                del self.publishers_dict[topic_name]
-                self.topic_table.removeRow(selected_row)
-                self.get_logger().info(f"Deleted topic {topic_name}")
 
     def publish_selected_message(self):
         selected_row = self.topic_table.currentRow()
@@ -156,4 +143,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
