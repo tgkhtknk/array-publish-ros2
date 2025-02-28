@@ -40,20 +40,25 @@ This is a GUI tool for publishing various MultiArray message types in ROS 2. It 
 
 1. Install ROS 2 and set up your environment:
 
-   'source /opt/ros/your_ros2_distro/setup.bash'
+   ```
+   source /opt/ros/your_ros2_distro/setup.bash
+   ```
 
 2. Install necessary Python dependencies:
-
-   'pip install rclpy PyQt5'
+   ```
+   pip install rclpy PyQt5
+   ```
 
 3. Clone the repository:
-   'cd /your/ws/directory'
+   ```
+   cd /your/ws/directory
    
-   'git clone github.com/tgkhtknk/array-publish-ros2'
+   git clone github.com/tgkhtknk/array-publish-ros2
    
-   'colcon build --packages-select array_publisher'
+   colcon build --packages-select array_publisher
 
-   'source install/setup.bash'
+   source install/setup.bash
+   ```
 
 ## Usage
 
