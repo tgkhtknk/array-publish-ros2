@@ -1,8 +1,8 @@
-#MultiArray Publisher for ROS 2
+# MultiArray Publisher for ROS 2
 
 This is a GUI tool for publishing various MultiArray message types in ROS 2. It allows users to define topics dynamically, set data sizes, and specify values for publishing.
 
-##Features
+## Features
 
 Supports multiple MultiArray message types:
 
@@ -26,7 +26,7 @@ Publish messages for selected topics or all topics
 
 Delete selected topics
 
-##Prerequisites
+## Prerequisites
 
 ROS 2 (Humble or compatible version)
 
@@ -36,7 +36,7 @@ rclpy
 
 PyQt5
 
-##Installation
+## Installation
 
 Install ROS 2 and set up your environment:
 
@@ -51,7 +51,7 @@ Clone the repository:
 git clone <repository_url>
 cd <repository_name>
 
-##Usage
+## Usage
 
 Run the script to start the GUI:
 
@@ -77,11 +77,11 @@ Click "Publish All" to publish all topics.
 
 Delete Topics - Select a topic and click "Delete Selected Topic" to remove it.
 
-##License
+## License
 
 This project is licensed under the MIT License.
 
-##Contributing
+## Contributing
 
 Feel free to open issues or submit pull requests to improve this tool.
 
