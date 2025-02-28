@@ -88,6 +88,10 @@ Run the script to start the GUI:
 
 7. Delete Topics - Select a topic and click "Delete Selected Topic" to remove it.
 
+### Exiting the Program
+
+To exit the program, simply close the GUI window.
+
 ## License
 
 This project is licensed under the Apache-2.0 License.
