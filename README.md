@@ -64,7 +64,7 @@ This is a GUI tool for publishing various MultiArray message types in ROS 2. It 
 
 Run the script to start the GUI:
 
-ros2 run array_publisher array_publihser
+`ros2 run array_publisher array_publihser`
 
 ### GUI Overview
 
@@ -88,7 +88,7 @@ ros2 run array_publisher array_publihser
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the Apache-2.0 License.
 
 ## Contributing
 
