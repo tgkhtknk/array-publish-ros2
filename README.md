@@ -4,37 +4,37 @@ This is a GUI tool for publishing various MultiArray message types in ROS 2. It 
 
 ## Features
 
-・Supports multiple MultiArray message types:
+- Supports multiple MultiArray message types:
 
   - Int8MultiArray, Int16MultiArray, Int32MultiArray, Int64MultiArray
 
-UInt8MultiArray, UInt16MultiArray, UInt32MultiArray, UInt64MultiArray
+  - UInt8MultiArray, UInt16MultiArray, UInt32MultiArray, UInt64MultiArray
 
-Float32MultiArray, Float64MultiArray
+  - Float32MultiArray, Float64MultiArray
 
-Add topics dynamically with:
+- Add topics dynamically with:
 
-Topic Name
+  - Topic Name
 
-Message Type
+  - Message Type
 
-Data Size
+  - Data Size
 
-Edit data after adding a topic
+- Edit data after adding a topic
 
-Publish messages for selected topics or all topics
+- Publish messages for selected topics or all topics
 
-Delete selected topics
+- Delete selected topics
 
 ## Prerequisites
 
-ROS 2 (Humble or compatible version)
+- ROS 2
 
-Python 3
+- Python 3
 
-rclpy
+- rclpy
 
-PyQt5
+- PyQt5
 
 ## Installation
 
