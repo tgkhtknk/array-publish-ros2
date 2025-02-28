@@ -54,29 +54,29 @@ This is a GUI tool for publishing various MultiArray message types in ROS 2. It 
 
 ## Usage
 
-- Run the script to start the GUI:
+Run the script to start the GUI:
 
-  ros2 run array_publisher array_publihser
+ros2 run array_publisher array_publihser
 
-- GUI Overview
+### GUI Overview
 
-  Select Message Type - Choose the type of MultiArray message.
+1. Select Message Type - Choose the type of MultiArray message.
 
-  Enter Topic Name - Specify the ROS 2 topic name.
+2. Enter Topic Name - Specify the ROS 2 topic name.
 
-  Set Data Size - Define the number of elements in the array.
+3. Set Data Size - Define the number of elements in the array.
 
-  Click "Add Topic" - Add a new topic to the table.
+4. Click "Add Topic" - Add a new topic to the table.
 
-  Edit Data - Modify the comma-separated values in the data field.
+5. Edit Data - Modify the comma-separated values in the data field.
 
-- Publish Messages:
+6. Publish Messages:
 
-  Click "Publish Selected" to publish a message for a selected topic.
+   - Click "Publish Selected" to publish a message for a selected topic.
 
-  Click "Publish All" to publish all topics.
+   - Click "Publish All" to publish all topics.
 
-  Delete Topics - Select a topic and click "Delete Selected Topic" to remove it.
+7. Delete Topics - Select a topic and click "Delete Selected Topic" to remove it.
 
 ## License
 
